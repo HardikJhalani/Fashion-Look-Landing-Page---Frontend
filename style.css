@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #D5D7DF;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 63% 12%;
+    position: relative;
+}
+
+#left1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+#logo {
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: black;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+#menu-items h4 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#left2 {
+    display: grid;
+    grid-template-rows: 8% 21% 21% 21% 21% 8%;
+}
+
+#left2 h1 {
+    font-size: 100px;
+    font-weight: 300;
+    align-self: center;
+}
+
+#left2 h1:nth-child(3) {
+    padding-left: 100px;
+}
+
+#left h1:nth-child(4) {
+    position: relative;
+}
+
+#left2 h1:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100px;
+    background-color: black;
+    top: 61%;
+    left: 27%;
+}
+
+#left2 h1:nth-child(5) {
+    padding-left: 200px;
+}
+
+#left3 {
+    padding-right: 55%;
+}
+
+#left3 p {
+    font-size: 14px;
+}
+
+#right {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right video {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#arrow {
+    background-color: orangered;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow i {
+    font-size: 40px;
+    color: white;
+}
